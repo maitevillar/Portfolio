@@ -1,0 +1,70 @@
+.wrapper-3d {
+    position: relative;
+    perspective: 20vw;
+    transform-style: preserve-3d;
+  }
+
+  
+.fold {
+    overflow: hidden;
+    width: 60vw;
+    height: 80vh;
+  }
+  
+  .fold.fold-top {
+    position: absolute;
+    transform-origin: bottom center;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+  }
+  
+  .fold-bottom {
+    position: absolute;
+    transform-origin: top center;
+    right: 0;
+    left: 0;
+    top: 100%;
+  }
+  
+  .fold-align {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .fold-bottom .fold-align {
+    transform: translateY(-100%);
+  }
+  
+  .fold-top .fold-align {
+    transform: translateY(100%);
+  }
+  
+  .fold.fold-bottom {
+    transform-origin: top center;
+    transform: rotateX(120deg);
+  }
+  
+  .fold.fold-top {
+    transform-origin: bottom center;
+    transform: rotateX(-120deg);
+  }
+  
+  .square {
+    width: 100%;
+    padding-bottom: 75%;
+  }
+  
+  .square.green {
+    background-color: lightgreen;
+  }
+  
+  .square.blue {
+    background-color: lightblue;
+  }
+  
+  .square.red {
+    background-color: lightcoral;
+  }
+  
+  
