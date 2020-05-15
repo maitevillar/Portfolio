@@ -1,3 +1,40 @@
+.screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+  .home{
+    font-family: $titlefont;
+    font-size: 1rem;
+    font-weight: 600;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+  }
+
+  .nav{
+    font-family: $textfont;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+    &__item{
+      padding: 2px;
+      margin: 0px 3px 0px 3px;
+    }
+  }
+}
+
 .wrapper-3d {
     position: relative;
     perspective: 20vw;
@@ -17,6 +54,7 @@
     left: 0;
     right: 0;
     bottom: 100%;
+    z-index: 0;
   }
   
   .fold-bottom {
@@ -55,16 +93,16 @@
     padding-bottom: 75%;
   }
   
-  .square.green {
-    background-color: lightgreen;
-  }
+  // .square.green {
+  //   background-color: lightgreen;
+  // }
   
-  .square.blue {
-    background-color: lightblue;
-  }
+  // .square.blue {
+  //   background-color: lightblue;
+  // }
   
-  .square.red {
-    background-color: lightcoral;
-  }
+  // .square.red {
+  //   background-color: lightcoral;
+  // }
   
   
