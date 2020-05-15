@@ -66,12 +66,6 @@ npm run push-docs
 
 Este comando borra la carpeta **docs/**, la vuelve a generar, crea un commit con los nuevos ficheros y hace un `git push`, todo del tirón. ¿Cómo se te queda el cuerpo?. Si quieres saber cómo funciona échale un ojo al fichero `package.json`.
 
-## Flujo de archivos con gulp
-
-Estas tareas de gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
 ## Estructura del proyecto
 
 Este **gulpfile.js** usa un JSON de configuración con las rutas de los archivos a generar/vigilar.
